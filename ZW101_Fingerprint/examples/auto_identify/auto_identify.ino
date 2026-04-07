@@ -18,8 +18,8 @@ ZW101_Fingerprint finger(&zwSerial);
 #define TOUCH_PIN 4
 #endif
 
-// Set to LOW when your module's detect pin is active-low, HIGH for active-high.
-#define TOUCH_ACTIVE_LEVEL LOW
+// Default is HIGH-active detect pin. Change to LOW if your module is active-low.
+#define TOUCH_ACTIVE_LEVEL HIGH
 
 static bool isTouchPressed()
 {
